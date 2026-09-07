@@ -223,7 +223,8 @@ decodificador_7_segmentos u_decodificador (
     .valor(valor_exibido),
     .segmentos_ativos(segmentos_ativos)
 );
-assign segmentos = ~segmentos_ativos;
+wire [6:0] segmentos_ativos_corrigido = {segmentos_ativos[0], segmentos_ativos[1], segmentos_ativos[2], segmentos_ativos[3], segmentos_ativos[4], segmentos_ativos[5], segmentos_ativos[6]};
+assign segmentos = ~segmentos_ativos_corrigido;
 
 assign leds = (5'b00001 << campo_atual);
 
