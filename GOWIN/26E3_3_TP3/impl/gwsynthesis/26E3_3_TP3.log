@@ -1,0 +1,43 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\aritmetica_ponto_fixo.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\debounce.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\decodificador_7_segmentos.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\formatos_numericos.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico_topo.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\representacao_ponto_flutuante.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\soma_ponto_flutuante.v'
+Analyzing Verilog file 'C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\unidade_aritmetica_inteira.v'
+Compiling module 'nucleo_aritmetico_topo'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico_topo.v":1)
+Compiling module 'debounce(LIMITE_ESTABILIDADE=16'b1100001101010000)'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\debounce.v":1)
+Compiling module 'nucleo_aritmetico'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico.v":1)
+Compiling module 'unidade_aritmetica_inteira'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\unidade_aritmetica_inteira.v":1)
+Compiling module 'aritmetica_ponto_fixo'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\aritmetica_ponto_fixo.v":1)
+Compiling module 'soma_ponto_flutuante'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\soma_ponto_flutuante.v":1)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\soma_ponto_flutuante.v":36)
+WARN  (EX2420) : Latch inferred for net 'mantissa_soma[11]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\soma_ponto_flutuante.v":64)
+Compiling module 'representacao_ponto_flutuante'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\representacao_ponto_flutuante.v":1)
+Compiling module 'decodificador_7_segmentos'("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\decodificador_7_segmentos.v":1)
+NOTE  (EX0101) : Current top module is "nucleo_aritmetico_topo"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "decodificador_7_segmentos" instantiated to "u_decodificador" is swept in optimizing("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico_topo.v":225)
+WARN  (NL0002) : The module "representacao_ponto_flutuante" instantiated to "u_empacotador" is swept in optimizing("C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico_topo.v":191)
+[95%] Generate netlist file "C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\impl\gwsynthesis\26E3_3_TP3.vg" completed
+[100%] Generate report file "C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\impl\gwsynthesis\26E3_3_TP3_syn.rpt.html" completed
+GowinSynthesis finish

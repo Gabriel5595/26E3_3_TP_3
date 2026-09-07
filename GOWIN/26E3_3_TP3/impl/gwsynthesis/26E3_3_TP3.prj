@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
+    <FileList>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\aritmetica_ponto_fixo.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\debounce.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\decodificador_7_segmentos.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\formatos_numericos.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico_topo.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\nucleo_aritmetico.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\representacao_ponto_flutuante.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\soma_ponto_flutuante.v" type="verilog"/>
+        <File path="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\src\unidade_aritmetica_inteira.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="50.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Users\gribe\OneDrive\Documentos\Verilog\26E3_3_TP3\impl\gwsynthesis\26E3_3_TP3.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="vcc" value="1.2"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

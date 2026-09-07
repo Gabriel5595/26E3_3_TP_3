@@ -1,0 +1,19 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
+    <FileList>
+        <File path="src/aritmetica_ponto_fixo.v" type="file.verilog" enable="1"/>
+        <File path="src/debounce.v" type="file.verilog" enable="1"/>
+        <File path="src/decodificador_7_segmentos.v" type="file.verilog" enable="1"/>
+        <File path="src/formatos_numericos.v" type="file.verilog" enable="1"/>
+        <File path="src/nucleo_aritmetico.v" type="file.verilog" enable="1"/>
+        <File path="src/nucleo_aritmetico_topo.v" type="file.verilog" enable="1"/>
+        <File path="src/representacao_ponto_flutuante.v" type="file.verilog" enable="1"/>
+        <File path="src/soma_ponto_flutuante.v" type="file.verilog" enable="1"/>
+        <File path="src/unidade_aritmetica_inteira.v" type="file.verilog" enable="1"/>
+        <File path="src/26E3_3_TP3.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

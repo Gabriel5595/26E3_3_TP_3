@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="nucleo_aritmetico_topo" Register="16" Lut="209" T_Register="70(16)" T_Alu="109(0)" T_Lut="286(209)" T_MULT9X9="2(0)">
+ <SubModule name="u_debounce_reset" Register="18" Alu="15" Lut="7" T_Register="18(18)" T_Alu="15(15)" T_Lut="7(7)"/>
+ <SubModule name="u_debounce_numero" Register="18" Alu="15" Lut="7" T_Register="18(18)" T_Alu="15(15)" T_Lut="7(7)"/>
+ <SubModule name="u_debounce_processo" Register="18" Alu="15" Lut="7" T_Register="18(18)" T_Alu="15(15)" T_Lut="7(7)"/>
+ <SubModule name="u_nucleo" T_Alu="64(0)" T_Lut="56(0)" T_MULT9X9="2(0)">
+  <SubModule name="u_inteiro" Alu="27" Lut="36" MULT9X9="1" T_Alu="27(27)" T_Lut="36(36)" T_MULT9X9="1(1)"/>
+  <SubModule name="u_ponto_fixo" Alu="5" Lut="3" MULT9X9="1" T_Alu="5(5)" T_Lut="3(3)" T_MULT9X9="1(1)"/>
+  <SubModule name="u_ponto_flutuante" Alu="32" Lut="17" T_Alu="32(32)" T_Lut="17(17)"/>
+ </SubModule>
+</Module>

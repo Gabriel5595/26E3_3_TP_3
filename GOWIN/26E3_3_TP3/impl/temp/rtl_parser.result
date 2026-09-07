@@ -1,0 +1,94 @@
+[
+ {
+  "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/formatos_numericos.v",
+  "InstLine" : 1,
+  "InstName" : "formatos_numericos",
+  "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/formatos_numericos.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "formatos_numericos"
+ },
+ {
+  "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+  "InstLine" : 1,
+  "InstName" : "nucleo_aritmetico_topo",
+  "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "nucleo_aritmetico_topo",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+    "InstLine" : 19,
+    "InstName" : "u_debounce_reset",
+    "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/debounce.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "debounce"
+   },
+   {
+    "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+    "InstLine" : 25,
+    "InstName" : "u_debounce_numero",
+    "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/debounce.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "debounce"
+   },
+   {
+    "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+    "InstLine" : 31,
+    "InstName" : "u_debounce_processo",
+    "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/debounce.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "debounce"
+   },
+   {
+    "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+    "InstLine" : 158,
+    "InstName" : "u_nucleo",
+    "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "nucleo_aritmetico",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico.v",
+      "InstLine" : 36,
+      "InstName" : "u_inteiro",
+      "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/unidade_aritmetica_inteira.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "unidade_aritmetica_inteira"
+     },
+     {
+      "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico.v",
+      "InstLine" : 48,
+      "InstName" : "u_ponto_fixo",
+      "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/aritmetica_ponto_fixo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "aritmetica_ponto_fixo"
+     },
+     {
+      "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico.v",
+      "InstLine" : 60,
+      "InstName" : "u_ponto_flutuante",
+      "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/soma_ponto_flutuante.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "soma_ponto_flutuante"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+    "InstLine" : 181,
+    "InstName" : "u_empacotador",
+    "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/representacao_ponto_flutuante.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "representacao_ponto_flutuante"
+   },
+   {
+    "InstFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/nucleo_aritmetico_topo.v",
+    "InstLine" : 222,
+    "InstName" : "u_decodificador",
+    "ModuleFile" : "C:/Users/gribe/OneDrive/Documentos/Verilog/26E3_3_TP3/src/decodificador_7_segmentos.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "decodificador_7_segmentos"
+   }
+  ]
+ }
+]
