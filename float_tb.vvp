@@ -8,32 +8,32 @@
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
-S_000002bcd9762310 .scope package, "$unit" "$unit" 2 1;
+S_000001e513372310 .scope package, "$unit" "$unit" 2 1;
  .timescale 0 0;
-S_000002bcd97624a0 .scope module, "soma_ponto_flutuante_tb" "soma_ponto_flutuante_tb" 3 3;
+S_000001e5133724a0 .scope module, "soma_ponto_flutuante_tb" "soma_ponto_flutuante_tb" 3 3;
  .timescale -9 -12;
-P_000002bcd9723330 .param/l "LARGURA_EXPOENTE" 1 3 5, +C4<00000000000000000000000000000100>;
-P_000002bcd9723368 .param/l "LARGURA_MANTISSA" 1 3 6, +C4<00000000000000000000000000001011>;
-v000002bcd97c8e00_0 .var "expoente_a", 3 0;
-v000002bcd97c8c20_0 .var "expoente_b", 3 0;
-v000002bcd97c9760_0 .net "expoente_resultado", 3 0, v000002bcd9748670_0;  1 drivers
-v000002bcd97c9a80_0 .var "mantissa_a", 10 0;
-v000002bcd97c8cc0_0 .var "mantissa_b", 10 0;
-v000002bcd97c93a0_0 .net "mantissa_resultado", 10 0, v000002bcd974d550_0;  1 drivers
-v000002bcd97c9440_0 .var "modo_subtracao", 0 0;
-v000002bcd97c8f40_0 .var "sinal_a", 0 0;
-v000002bcd97c9940_0 .var "sinal_b", 0 0;
-v000002bcd97c8fe0_0 .net "sinal_resultado", 0 0, v000002bcd97c9120_0;  1 drivers
-v000002bcd97c8d60_0 .var/i "valor_a", 31 0;
-v000002bcd97c8ea0_0 .var/i "valor_b", 31 0;
-v000002bcd97c96c0_0 .var/i "valor_resultado", 31 0;
-S_000002bcd974e2c0 .scope task, "executar_caso" "executar_caso" 3 30, 3 30 0, S_000002bcd97624a0;
+P_000001e513333330 .param/l "LARGURA_EXPOENTE" 1 3 5, +C4<00000000000000000000000000000100>;
+P_000001e513333368 .param/l "LARGURA_MANTISSA" 1 3 6, +C4<00000000000000000000000000001011>;
+v000001e5133d96c0_0 .var "expoente_a", 3 0;
+v000001e5133d9120_0 .var "expoente_b", 3 0;
+v000001e5133d9760_0 .net "expoente_resultado", 3 0, v000001e513358670_0;  1 drivers
+v000001e5133d9440_0 .var "mantissa_a", 10 0;
+v000001e5133d8fe0_0 .var "mantissa_b", 10 0;
+v000001e5133d8d60_0 .net "mantissa_resultado", 10 0, v000001e51335d550_0;  1 drivers
+v000001e5133d9300_0 .var "modo_subtracao", 0 0;
+v000001e5133d8c20_0 .var "sinal_a", 0 0;
+v000001e5133d91c0_0 .var "sinal_b", 0 0;
+v000001e5133d8b80_0 .net "sinal_resultado", 0 0, v000001e5133d8e00_0;  1 drivers
+v000001e5133d98a0_0 .var/i "valor_a", 31 0;
+v000001e5133d8ea0_0 .var/i "valor_b", 31 0;
+v000001e5133d94e0_0 .var/i "valor_resultado", 31 0;
+S_000001e51335e2c0 .scope task, "executar_caso" "executar_caso" 3 30, 3 30 0, S_000001e5133724a0;
  .timescale -9 -12;
-v000002bcd974eb60_0 .var/i "esperado", 31 0;
-v000002bcd9754a10_0 .var "nome_caso", 799 0;
+v000001e51335eb60_0 .var/i "esperado", 31 0;
+v000001e513364a10_0 .var "nome_caso", 799 0;
 TD_soma_ponto_flutuante_tb.executar_caso ;
     %delay 10000, 0;
-    %load/vec4 v000002bcd97c8f40_0;
+    %load/vec4 v000001e5133d8c20_0;
     %flag_set/vec4 8;
     %jmp/0 T_0.0, 8;
     %pushi/vec4 4294967295, 0, 32;
@@ -44,15 +44,15 @@ T_0.0 ; End of true expr.
  ; End of false expr.
     %blend;
 T_0.1;
-    %load/vec4 v000002bcd97c9a80_0;
+    %load/vec4 v000001e5133d9440_0;
     %pad/u 32;
     %mul;
     %pushi/vec4 2, 0, 32;
-    %load/vec4 v000002bcd97c8e00_0;
+    %load/vec4 v000001e5133d96c0_0;
     %pow;
     %mul;
-    %store/vec4 v000002bcd97c8d60_0, 0, 32;
-    %load/vec4 v000002bcd97c9940_0;
+    %store/vec4 v000001e5133d98a0_0, 0, 32;
+    %load/vec4 v000001e5133d91c0_0;
     %flag_set/vec4 8;
     %jmp/0 T_0.2, 8;
     %pushi/vec4 4294967295, 0, 32;
@@ -63,15 +63,15 @@ T_0.2 ; End of true expr.
  ; End of false expr.
     %blend;
 T_0.3;
-    %load/vec4 v000002bcd97c8cc0_0;
+    %load/vec4 v000001e5133d8fe0_0;
     %pad/u 32;
     %mul;
     %pushi/vec4 2, 0, 32;
-    %load/vec4 v000002bcd97c8c20_0;
+    %load/vec4 v000001e5133d9120_0;
     %pow;
     %mul;
-    %store/vec4 v000002bcd97c8ea0_0, 0, 32;
-    %load/vec4 v000002bcd97c8fe0_0;
+    %store/vec4 v000001e5133d8ea0_0, 0, 32;
+    %load/vec4 v000001e5133d8b80_0;
     %flag_set/vec4 8;
     %jmp/0 T_0.4, 8;
     %pushi/vec4 4294967295, 0, 32;
@@ -82,17 +82,17 @@ T_0.4 ; End of true expr.
  ; End of false expr.
     %blend;
 T_0.5;
-    %load/vec4 v000002bcd97c93a0_0;
+    %load/vec4 v000001e5133d8d60_0;
     %pad/u 32;
     %mul;
     %pushi/vec4 2, 0, 32;
-    %load/vec4 v000002bcd97c9760_0;
+    %load/vec4 v000001e5133d9760_0;
     %pow;
     %mul;
-    %store/vec4 v000002bcd97c96c0_0, 0, 32;
-    %vpi_call/w 3 38 "$display", "CASO: %0s | A=%0d B=%0d modo_subtracao=%0d -> resultado=%0d (esperado sem quantizacao=%0d)", v000002bcd9754a10_0, v000002bcd97c8d60_0, v000002bcd97c8ea0_0, v000002bcd97c9440_0, v000002bcd97c96c0_0, v000002bcd974eb60_0 {0 0 0};
+    %store/vec4 v000001e5133d94e0_0, 0, 32;
+    %vpi_call/w 3 38 "$display", "CASO: %0s | A=%0d B=%0d modo_subtracao=%0d -> resultado=%0d (esperado sem quantizacao=%0d)", v000001e513364a10_0, v000001e5133d98a0_0, v000001e5133d8ea0_0, v000001e5133d9300_0, v000001e5133d94e0_0, v000001e51335eb60_0 {0 0 0};
     %end;
-S_000002bcd974e450 .scope module, "u_soma_float" "soma_ponto_flutuante" 3 19, 4 1 0, S_000002bcd97624a0;
+S_000001e51335e450 .scope module, "u_soma_float" "soma_ponto_flutuante" 3 19, 4 1 0, S_000001e5133724a0;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "modo_subtracao";
     .port_info 1 /INPUT 1 "sinal_a";
@@ -104,167 +104,167 @@ S_000002bcd974e450 .scope module, "u_soma_float" "soma_ponto_flutuante" 3 19, 4 
     .port_info 7 /OUTPUT 1 "sinal_resultado";
     .port_info 8 /OUTPUT 4 "expoente_resultado";
     .port_info 9 /OUTPUT 11 "mantissa_resultado";
-P_000002bcd97514d0 .param/l "LARGURA_EXPOENTE" 0 4 2, +C4<00000000000000000000000000000100>;
-P_000002bcd9751508 .param/l "LARGURA_MANTISSA" 0 4 3, +C4<00000000000000000000000000001011>;
-v000002bcd9762630_0 .var "deslocamento", 3 0;
-v000002bcd9723130_0 .var/s "diferenca_expoente", 4 0;
-v000002bcd97626d0_0 .net "expoente_a", 3 0, v000002bcd97c8e00_0;  1 drivers
-v000002bcd974e5e0_0 .var "expoente_alinhado", 3 0;
-v000002bcd974e680_0 .net "expoente_b", 3 0, v000002bcd97c8c20_0;  1 drivers
-v000002bcd9748670_0 .var "expoente_resultado", 3 0;
-v000002bcd9748710_0 .net "mantissa_a", 10 0, v000002bcd97c9a80_0;  1 drivers
-v000002bcd974d370_0 .var "mantissa_a_alinhada", 10 0;
-v000002bcd974d410_0 .net "mantissa_b", 10 0, v000002bcd97c8cc0_0;  1 drivers
-v000002bcd974d4b0_0 .var "mantissa_b_alinhada", 10 0;
-v000002bcd974d550_0 .var "mantissa_resultado", 10 0;
-v000002bcd974d5f0_0 .var "mantissa_soma", 11 0;
-v000002bcd974d690_0 .net "modo_subtracao", 0 0, v000002bcd97c9440_0;  1 drivers
-v000002bcd974d730_0 .net "sinal_a", 0 0, v000002bcd97c8f40_0;  1 drivers
-v000002bcd97c8b80_0 .net "sinal_b", 0 0, v000002bcd97c9940_0;  1 drivers
-v000002bcd97c91c0_0 .var "sinal_b_efetivo", 0 0;
-v000002bcd97c9120_0 .var "sinal_resultado", 0 0;
-E_000002bcd9749420/0 .event anyedge, v000002bcd974d690_0, v000002bcd97c8b80_0, v000002bcd97626d0_0, v000002bcd974e680_0;
-E_000002bcd9749420/1 .event anyedge, v000002bcd9723130_0, v000002bcd9748710_0, v000002bcd974d410_0, v000002bcd9762630_0;
-E_000002bcd9749420/2 .event anyedge, v000002bcd974d730_0, v000002bcd97c91c0_0, v000002bcd974d370_0, v000002bcd974d4b0_0;
-E_000002bcd9749420/3 .event anyedge, v000002bcd974d5f0_0, v000002bcd974e5e0_0, v000002bcd974d550_0;
-E_000002bcd9749420 .event/or E_000002bcd9749420/0, E_000002bcd9749420/1, E_000002bcd9749420/2, E_000002bcd9749420/3;
-    .scope S_000002bcd974e450;
+P_000001e5133614d0 .param/l "LARGURA_EXPOENTE" 0 4 2, +C4<00000000000000000000000000000100>;
+P_000001e513361508 .param/l "LARGURA_MANTISSA" 0 4 3, +C4<00000000000000000000000000001011>;
+v000001e513372630_0 .var "deslocamento", 3 0;
+v000001e513333130_0 .var/s "diferenca_expoente", 4 0;
+v000001e5133726d0_0 .net "expoente_a", 3 0, v000001e5133d96c0_0;  1 drivers
+v000001e51335e5e0_0 .var "expoente_alinhado", 3 0;
+v000001e51335e680_0 .net "expoente_b", 3 0, v000001e5133d9120_0;  1 drivers
+v000001e513358670_0 .var "expoente_resultado", 3 0;
+v000001e513358710_0 .net "mantissa_a", 10 0, v000001e5133d9440_0;  1 drivers
+v000001e51335d370_0 .var "mantissa_a_alinhada", 10 0;
+v000001e51335d410_0 .net "mantissa_b", 10 0, v000001e5133d8fe0_0;  1 drivers
+v000001e51335d4b0_0 .var "mantissa_b_alinhada", 10 0;
+v000001e51335d550_0 .var "mantissa_resultado", 10 0;
+v000001e51335d5f0_0 .var "mantissa_soma", 11 0;
+v000001e51335d690_0 .net "modo_subtracao", 0 0, v000001e5133d9300_0;  1 drivers
+v000001e51335d730_0 .net "sinal_a", 0 0, v000001e5133d8c20_0;  1 drivers
+v000001e5133d9a80_0 .net "sinal_b", 0 0, v000001e5133d91c0_0;  1 drivers
+v000001e5133d8f40_0 .var "sinal_b_efetivo", 0 0;
+v000001e5133d8e00_0 .var "sinal_resultado", 0 0;
+E_000001e51335a520/0 .event anyedge, v000001e51335d690_0, v000001e5133d9a80_0, v000001e5133726d0_0, v000001e51335e680_0;
+E_000001e51335a520/1 .event anyedge, v000001e513333130_0, v000001e513358710_0, v000001e51335d410_0, v000001e513372630_0;
+E_000001e51335a520/2 .event anyedge, v000001e51335d730_0, v000001e5133d8f40_0, v000001e51335d370_0, v000001e51335d4b0_0;
+E_000001e51335a520/3 .event anyedge, v000001e51335d5f0_0, v000001e51335e5e0_0, v000001e51335d550_0;
+E_000001e51335a520 .event/or E_000001e51335a520/0, E_000001e51335a520/1, E_000001e51335a520/2, E_000001e51335a520/3;
+    .scope S_000001e51335e450;
 T_1 ;
-    %wait E_000002bcd9749420;
-    %load/vec4 v000002bcd974d690_0;
+    %wait E_000001e51335a520;
+    %load/vec4 v000001e51335d690_0;
     %flag_set/vec4 8;
     %jmp/0 T_1.0, 8;
-    %load/vec4 v000002bcd97c8b80_0;
+    %load/vec4 v000001e5133d9a80_0;
     %inv;
     %jmp/1 T_1.1, 8;
 T_1.0 ; End of true expr.
-    %load/vec4 v000002bcd97c8b80_0;
+    %load/vec4 v000001e5133d9a80_0;
     %jmp/0 T_1.1, 8;
  ; End of false expr.
     %blend;
 T_1.1;
-    %store/vec4 v000002bcd97c91c0_0, 0, 1;
+    %store/vec4 v000001e5133d8f40_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %load/vec4 v000002bcd97626d0_0;
+    %load/vec4 v000001e5133726d0_0;
     %concat/vec4; draw_concat_vec4
     %pushi/vec4 0, 0, 1;
-    %load/vec4 v000002bcd974e680_0;
+    %load/vec4 v000001e51335e680_0;
     %concat/vec4; draw_concat_vec4
     %sub;
-    %store/vec4 v000002bcd9723130_0, 0, 5;
-    %load/vec4 v000002bcd9723130_0;
+    %store/vec4 v000001e513333130_0, 0, 5;
+    %load/vec4 v000001e513333130_0;
     %pad/s 32;
     %cmpi/s 0, 0, 32;
     %flag_inv 5; GE is !LT
     %jmp/0xz  T_1.2, 5;
-    %load/vec4 v000002bcd9723130_0;
+    %load/vec4 v000001e513333130_0;
     %parti/s 4, 0, 2;
-    %store/vec4 v000002bcd9762630_0, 0, 4;
-    %load/vec4 v000002bcd97626d0_0;
-    %store/vec4 v000002bcd974e5e0_0, 0, 4;
-    %load/vec4 v000002bcd9748710_0;
-    %store/vec4 v000002bcd974d370_0, 0, 11;
-    %load/vec4 v000002bcd974d410_0;
-    %ix/getv 4, v000002bcd9762630_0;
+    %store/vec4 v000001e513372630_0, 0, 4;
+    %load/vec4 v000001e5133726d0_0;
+    %store/vec4 v000001e51335e5e0_0, 0, 4;
+    %load/vec4 v000001e513358710_0;
+    %store/vec4 v000001e51335d370_0, 0, 11;
+    %load/vec4 v000001e51335d410_0;
+    %ix/getv 4, v000001e513372630_0;
     %shiftr 4;
-    %store/vec4 v000002bcd974d4b0_0, 0, 11;
+    %store/vec4 v000001e51335d4b0_0, 0, 11;
     %jmp T_1.3;
 T_1.2 ;
-    %load/vec4 v000002bcd9723130_0;
+    %load/vec4 v000001e513333130_0;
     %inv;
     %pushi/vec4 1, 0, 5;
     %add;
     %pad/s 4;
-    %store/vec4 v000002bcd9762630_0, 0, 4;
-    %load/vec4 v000002bcd974e680_0;
-    %store/vec4 v000002bcd974e5e0_0, 0, 4;
-    %load/vec4 v000002bcd974d410_0;
-    %store/vec4 v000002bcd974d4b0_0, 0, 11;
-    %load/vec4 v000002bcd9748710_0;
-    %ix/getv 4, v000002bcd9762630_0;
+    %store/vec4 v000001e513372630_0, 0, 4;
+    %load/vec4 v000001e51335e680_0;
+    %store/vec4 v000001e51335e5e0_0, 0, 4;
+    %load/vec4 v000001e51335d410_0;
+    %store/vec4 v000001e51335d4b0_0, 0, 11;
+    %load/vec4 v000001e513358710_0;
+    %ix/getv 4, v000001e513372630_0;
     %shiftr 4;
-    %store/vec4 v000002bcd974d370_0, 0, 11;
+    %store/vec4 v000001e51335d370_0, 0, 11;
 T_1.3 ;
-    %load/vec4 v000002bcd974d730_0;
-    %load/vec4 v000002bcd97c91c0_0;
+    %load/vec4 v000001e51335d730_0;
+    %load/vec4 v000001e5133d8f40_0;
     %cmp/e;
     %jmp/0xz  T_1.4, 4;
-    %load/vec4 v000002bcd974d370_0;
+    %load/vec4 v000001e51335d370_0;
     %pad/u 12;
-    %load/vec4 v000002bcd974d4b0_0;
+    %load/vec4 v000001e51335d4b0_0;
     %pad/u 12;
     %add;
-    %store/vec4 v000002bcd974d5f0_0, 0, 12;
-    %load/vec4 v000002bcd974d730_0;
-    %store/vec4 v000002bcd97c9120_0, 0, 1;
-    %load/vec4 v000002bcd974d5f0_0;
+    %store/vec4 v000001e51335d5f0_0, 0, 12;
+    %load/vec4 v000001e51335d730_0;
+    %store/vec4 v000001e5133d8e00_0, 0, 1;
+    %load/vec4 v000001e51335d5f0_0;
     %parti/s 1, 11, 5;
     %flag_set/vec4 8;
     %jmp/0xz  T_1.6, 8;
-    %load/vec4 v000002bcd974d5f0_0;
+    %load/vec4 v000001e51335d5f0_0;
     %parti/s 11, 1, 2;
-    %store/vec4 v000002bcd974d550_0, 0, 11;
-    %load/vec4 v000002bcd974e5e0_0;
+    %store/vec4 v000001e51335d550_0, 0, 11;
+    %load/vec4 v000001e51335e5e0_0;
     %addi 1, 0, 4;
-    %store/vec4 v000002bcd9748670_0, 0, 4;
+    %store/vec4 v000001e513358670_0, 0, 4;
     %jmp T_1.7;
 T_1.6 ;
-    %load/vec4 v000002bcd974d5f0_0;
+    %load/vec4 v000001e51335d5f0_0;
     %parti/s 11, 0, 2;
-    %store/vec4 v000002bcd974d550_0, 0, 11;
-    %load/vec4 v000002bcd974e5e0_0;
-    %store/vec4 v000002bcd9748670_0, 0, 4;
+    %store/vec4 v000001e51335d550_0, 0, 11;
+    %load/vec4 v000001e51335e5e0_0;
+    %store/vec4 v000001e513358670_0, 0, 4;
 T_1.7 ;
     %jmp T_1.5;
 T_1.4 ;
-    %load/vec4 v000002bcd974e5e0_0;
-    %store/vec4 v000002bcd9748670_0, 0, 4;
-    %load/vec4 v000002bcd974d4b0_0;
-    %load/vec4 v000002bcd974d370_0;
+    %load/vec4 v000001e51335e5e0_0;
+    %store/vec4 v000001e513358670_0, 0, 4;
+    %load/vec4 v000001e51335d4b0_0;
+    %load/vec4 v000001e51335d370_0;
     %cmp/u;
     %flag_or 5, 4;
     %jmp/0xz  T_1.8, 5;
-    %load/vec4 v000002bcd974d370_0;
-    %load/vec4 v000002bcd974d4b0_0;
+    %load/vec4 v000001e51335d370_0;
+    %load/vec4 v000001e51335d4b0_0;
     %sub;
-    %store/vec4 v000002bcd974d550_0, 0, 11;
-    %load/vec4 v000002bcd974d730_0;
-    %store/vec4 v000002bcd97c9120_0, 0, 1;
+    %store/vec4 v000001e51335d550_0, 0, 11;
+    %load/vec4 v000001e51335d730_0;
+    %store/vec4 v000001e5133d8e00_0, 0, 1;
     %jmp T_1.9;
 T_1.8 ;
-    %load/vec4 v000002bcd974d4b0_0;
-    %load/vec4 v000002bcd974d370_0;
+    %load/vec4 v000001e51335d4b0_0;
+    %load/vec4 v000001e51335d370_0;
     %sub;
-    %store/vec4 v000002bcd974d550_0, 0, 11;
-    %load/vec4 v000002bcd97c91c0_0;
-    %store/vec4 v000002bcd97c9120_0, 0, 1;
+    %store/vec4 v000001e51335d550_0, 0, 11;
+    %load/vec4 v000001e5133d8f40_0;
+    %store/vec4 v000001e5133d8e00_0, 0, 1;
 T_1.9 ;
-    %load/vec4 v000002bcd974d550_0;
+    %load/vec4 v000001e51335d550_0;
     %cmpi/e 0, 0, 11;
     %jmp/0xz  T_1.10, 4;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9120_0, 0, 1;
+    %store/vec4 v000001e5133d8e00_0, 0, 1;
 T_1.10 ;
 T_1.5 ;
     %jmp T_1;
     .thread T_1, $push;
-    .scope S_000002bcd97624a0;
+    .scope S_000001e5133724a0;
 T_2 ;
     %vpi_call/w 3 44 "$display", "=== Iniciando testes da soma_ponto_flutuante ===" {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9440_0, 0, 1;
+    %store/vec4 v000001e5133d9300_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c8f40_0, 0, 1;
+    %store/vec4 v000001e5133d8c20_0, 0, 1;
     %pushi/vec4 100, 0, 11;
-    %store/vec4 v000002bcd97c9a80_0, 0, 11;
+    %store/vec4 v000001e5133d9440_0, 0, 11;
     %pushi/vec4 2, 0, 4;
-    %store/vec4 v000002bcd97c8e00_0, 0, 4;
+    %store/vec4 v000001e5133d96c0_0, 0, 4;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9940_0, 0, 1;
+    %store/vec4 v000001e5133d91c0_0, 0, 1;
     %pushi/vec4 50, 0, 11;
-    %store/vec4 v000002bcd97c8cc0_0, 0, 11;
+    %store/vec4 v000001e5133d8fe0_0, 0, 11;
     %pushi/vec4 1, 0, 4;
-    %store/vec4 v000002bcd97c8c20_0, 0, 4;
+    %store/vec4 v000001e5133d9120_0, 0, 4;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -314,25 +314,25 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 825241641, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v000002bcd9754a10_0, 0, 800;
+    %store/vec4 v000001e513364a10_0, 0, 800;
     %pushi/vec4 500, 0, 32;
-    %store/vec4 v000002bcd974eb60_0, 0, 32;
-    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000002bcd974e2c0;
+    %store/vec4 v000001e51335eb60_0, 0, 32;
+    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000001e51335e2c0;
     %join;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9440_0, 0, 1;
+    %store/vec4 v000001e5133d9300_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c8f40_0, 0, 1;
+    %store/vec4 v000001e5133d8c20_0, 0, 1;
     %pushi/vec4 2000, 0, 11;
-    %store/vec4 v000002bcd97c9a80_0, 0, 11;
+    %store/vec4 v000001e5133d9440_0, 0, 11;
     %pushi/vec4 0, 0, 4;
-    %store/vec4 v000002bcd97c8e00_0, 0, 4;
+    %store/vec4 v000001e5133d96c0_0, 0, 4;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9940_0, 0, 1;
+    %store/vec4 v000001e5133d91c0_0, 0, 1;
     %pushi/vec4 2000, 0, 11;
-    %store/vec4 v000002bcd97c8cc0_0, 0, 11;
+    %store/vec4 v000001e5133d8fe0_0, 0, 11;
     %pushi/vec4 0, 0, 4;
-    %store/vec4 v000002bcd97c8c20_0, 0, 4;
+    %store/vec4 v000001e5133d9120_0, 0, 4;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -382,25 +382,25 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 808464425, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v000002bcd9754a10_0, 0, 800;
+    %store/vec4 v000001e513364a10_0, 0, 800;
     %pushi/vec4 4000, 0, 32;
-    %store/vec4 v000002bcd974eb60_0, 0, 32;
-    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000002bcd974e2c0;
+    %store/vec4 v000001e51335eb60_0, 0, 32;
+    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000001e51335e2c0;
     %join;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000002bcd97c9440_0, 0, 1;
+    %store/vec4 v000001e5133d9300_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c8f40_0, 0, 1;
+    %store/vec4 v000001e5133d8c20_0, 0, 1;
     %pushi/vec4 500, 0, 11;
-    %store/vec4 v000002bcd97c9a80_0, 0, 11;
+    %store/vec4 v000001e5133d9440_0, 0, 11;
     %pushi/vec4 3, 0, 4;
-    %store/vec4 v000002bcd97c8e00_0, 0, 4;
+    %store/vec4 v000001e5133d96c0_0, 0, 4;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9940_0, 0, 1;
+    %store/vec4 v000001e5133d91c0_0, 0, 1;
     %pushi/vec4 500, 0, 11;
-    %store/vec4 v000002bcd97c8cc0_0, 0, 11;
+    %store/vec4 v000001e5133d8fe0_0, 0, 11;
     %pushi/vec4 3, 0, 4;
-    %store/vec4 v000002bcd97c8c20_0, 0, 4;
+    %store/vec4 v000001e5133d9120_0, 0, 4;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -450,25 +450,25 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 808464425, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v000002bcd9754a10_0, 0, 800;
+    %store/vec4 v000001e513364a10_0, 0, 800;
     %pushi/vec4 0, 0, 32;
-    %store/vec4 v000002bcd974eb60_0, 0, 32;
-    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000002bcd974e2c0;
+    %store/vec4 v000001e51335eb60_0, 0, 32;
+    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000001e51335e2c0;
     %join;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000002bcd97c9440_0, 0, 1;
+    %store/vec4 v000001e5133d9300_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c8f40_0, 0, 1;
+    %store/vec4 v000001e5133d8c20_0, 0, 1;
     %pushi/vec4 300, 0, 11;
-    %store/vec4 v000002bcd97c9a80_0, 0, 11;
+    %store/vec4 v000001e5133d9440_0, 0, 11;
     %pushi/vec4 2, 0, 4;
-    %store/vec4 v000002bcd97c8e00_0, 0, 4;
+    %store/vec4 v000001e5133d96c0_0, 0, 4;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9940_0, 0, 1;
+    %store/vec4 v000001e5133d91c0_0, 0, 1;
     %pushi/vec4 100, 0, 11;
-    %store/vec4 v000002bcd97c8cc0_0, 0, 11;
+    %store/vec4 v000001e5133d8fe0_0, 0, 11;
     %pushi/vec4 1, 0, 4;
-    %store/vec4 v000002bcd97c8c20_0, 0, 4;
+    %store/vec4 v000001e5133d9120_0, 0, 4;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -518,25 +518,25 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 842018857, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v000002bcd9754a10_0, 0, 800;
+    %store/vec4 v000001e513364a10_0, 0, 800;
     %pushi/vec4 1000, 0, 32;
-    %store/vec4 v000002bcd974eb60_0, 0, 32;
-    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000002bcd974e2c0;
+    %store/vec4 v000001e51335eb60_0, 0, 32;
+    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000001e51335e2c0;
     %join;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9440_0, 0, 1;
+    %store/vec4 v000001e5133d9300_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c8f40_0, 0, 1;
+    %store/vec4 v000001e5133d8c20_0, 0, 1;
     %pushi/vec4 800, 0, 11;
-    %store/vec4 v000002bcd97c9a80_0, 0, 11;
+    %store/vec4 v000001e5133d9440_0, 0, 11;
     %pushi/vec4 1, 0, 4;
-    %store/vec4 v000002bcd97c8e00_0, 0, 4;
+    %store/vec4 v000001e5133d96c0_0, 0, 4;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000002bcd97c9940_0, 0, 1;
+    %store/vec4 v000001e5133d91c0_0, 0, 1;
     %pushi/vec4 300, 0, 11;
-    %store/vec4 v000002bcd97c8cc0_0, 0, 11;
+    %store/vec4 v000001e5133d8fe0_0, 0, 11;
     %pushi/vec4 0, 0, 4;
-    %store/vec4 v000002bcd97c8c20_0, 0, 4;
+    %store/vec4 v000001e5133d9120_0, 0, 4;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -586,25 +586,25 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 808462633, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v000002bcd9754a10_0, 0, 800;
+    %store/vec4 v000001e513364a10_0, 0, 800;
     %pushi/vec4 1300, 0, 32;
-    %store/vec4 v000002bcd974eb60_0, 0, 32;
-    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000002bcd974e2c0;
+    %store/vec4 v000001e51335eb60_0, 0, 32;
+    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000001e51335e2c0;
     %join;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9440_0, 0, 1;
+    %store/vec4 v000001e5133d9300_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c8f40_0, 0, 1;
+    %store/vec4 v000001e5133d8c20_0, 0, 1;
     %pushi/vec4 7, 0, 11;
-    %store/vec4 v000002bcd97c9a80_0, 0, 11;
+    %store/vec4 v000001e5133d9440_0, 0, 11;
     %pushi/vec4 3, 0, 4;
-    %store/vec4 v000002bcd97c8e00_0, 0, 4;
+    %store/vec4 v000001e5133d96c0_0, 0, 4;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002bcd97c9940_0, 0, 1;
+    %store/vec4 v000001e5133d91c0_0, 0, 1;
     %pushi/vec4 5, 0, 11;
-    %store/vec4 v000002bcd97c8cc0_0, 0, 11;
+    %store/vec4 v000001e5133d8fe0_0, 0, 11;
     %pushi/vec4 0, 0, 4;
-    %store/vec4 v000002bcd97c8c20_0, 0, 4;
+    %store/vec4 v000001e5133d9120_0, 0, 4;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -654,10 +654,10 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 723531049, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v000002bcd9754a10_0, 0, 800;
+    %store/vec4 v000001e513364a10_0, 0, 800;
     %pushi/vec4 61, 0, 32;
-    %store/vec4 v000002bcd974eb60_0, 0, 32;
-    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000002bcd974e2c0;
+    %store/vec4 v000001e51335eb60_0, 0, 32;
+    %fork TD_soma_ponto_flutuante_tb.executar_caso, S_000001e51335e2c0;
     %join;
     %vpi_call/w 3 76 "$display", "=== Testes concluidos ===" {0 0 0};
     %vpi_call/w 3 77 "$finish" {0 0 0};

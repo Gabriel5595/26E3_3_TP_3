@@ -8,134 +8,134 @@
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
-S_00000291ae7765a0 .scope package, "$unit" "$unit" 2 1;
+S_000001e93c9e65a0 .scope package, "$unit" "$unit" 2 1;
  .timescale 0 0;
-S_00000291ae79f950 .scope module, "aritmetica_ponto_fixo_tb" "aritmetica_ponto_fixo_tb" 3 3;
+S_000001e93ca0f950 .scope module, "aritmetica_ponto_fixo_tb" "aritmetica_ponto_fixo_tb" 3 3;
  .timescale -9 -12;
-P_00000291ae753460 .param/l "BITS_FRACIONARIOS" 1 3 6, +C4<00000000000000000000000000000101>;
-P_00000291ae753498 .param/l "BITS_INTEIROS" 1 3 5, +C4<00000000000000000000000000000011>;
-v00000291ae7f1e20_0 .var "operacao", 1 0;
-v00000291ae7f1a60_0 .var/s "operando_a", 7 0;
-v00000291ae7f1880_0 .var/s "operando_b", 7 0;
-v00000291ae7f1740_0 .net/s "resultado", 7 0, v00000291ae7f1c40_0;  1 drivers
-v00000291ae7f1920_0 .net "saturou", 0 0, v00000291ae7f17e0_0;  1 drivers
-v00000291ae7f1b00_0 .var/real "valor_a_real", 0 0;
-v00000291ae7f1ce0_0 .var/real "valor_b_real", 0 0;
-v00000291ae7f1d80_0 .var/real "valor_resultado_real", 0 0;
-S_00000291ae79fae0 .scope task, "executar_caso" "executar_caso" 3 24, 3 24 0, S_00000291ae79f950;
+P_000001e93c9c3460 .param/l "BITS_FRACIONARIOS" 1 3 6, +C4<00000000000000000000000000000101>;
+P_000001e93c9c3498 .param/l "BITS_INTEIROS" 1 3 5, +C4<00000000000000000000000000000011>;
+v000001e93ca61ec0_0 .var "operacao", 1 0;
+v000001e93ca61600_0 .var/s "operando_a", 7 0;
+v000001e93ca61e20_0 .var/s "operando_b", 7 0;
+v000001e93ca61880_0 .net/s "resultado", 7 0, v000001e93ca61740_0;  1 drivers
+v000001e93ca61100_0 .net "saturou", 0 0, v000001e93ca61a60_0;  1 drivers
+v000001e93ca611a0_0 .var/real "valor_a_real", 0 0;
+v000001e93ca61ce0_0 .var/real "valor_b_real", 0 0;
+v000001e93ca61d80_0 .var/real "valor_resultado_real", 0 0;
+S_000001e93ca0fae0 .scope task, "executar_caso" "executar_caso" 3 24, 3 24 0, S_000001e93ca0f950;
  .timescale -9 -12;
-v00000291ae78b210_0 .var "nome_caso", 799 0;
+v000001e93c9fb210_0 .var "nome_caso", 799 0;
 TD_aritmetica_ponto_fixo_tb.executar_caso ;
     %delay 10000, 0;
-    %load/vec4 v00000291ae7f1a60_0;
+    %load/vec4 v000001e93ca61600_0;
     %cvt/rv/s;
     %pushi/real 1073741824, 4071; load=32.0000
     %div/wr;
-    %store/real v00000291ae7f1b00_0;
-    %load/vec4 v00000291ae7f1880_0;
+    %store/real v000001e93ca611a0_0;
+    %load/vec4 v000001e93ca61e20_0;
     %cvt/rv/s;
     %pushi/real 1073741824, 4071; load=32.0000
     %div/wr;
-    %store/real v00000291ae7f1ce0_0;
-    %load/vec4 v00000291ae7f1740_0;
+    %store/real v000001e93ca61ce0_0;
+    %load/vec4 v000001e93ca61880_0;
     %cvt/rv/s;
     %pushi/real 1073741824, 4071; load=32.0000
     %div/wr;
-    %store/real v00000291ae7f1d80_0;
-    %vpi_call/w 3 31 "$display", "CASO: %0s | a=%0d/32=%0.5f b=%0d/32=%0.5f operacao=%0d -> resultado=%0d/32=%0.5f saturou=%0d", v00000291ae78b210_0, v00000291ae7f1a60_0, v00000291ae7f1b00_0, v00000291ae7f1880_0, v00000291ae7f1ce0_0, v00000291ae7f1e20_0, v00000291ae7f1740_0, v00000291ae7f1d80_0, v00000291ae7f1920_0 {0 0 0};
+    %store/real v000001e93ca61d80_0;
+    %vpi_call/w 3 31 "$display", "CASO: %0s | a=%0d/32=%0.5f b=%0d/32=%0.5f operacao=%0d -> resultado=%0d/32=%0.5f saturou=%0d", v000001e93c9fb210_0, v000001e93ca61600_0, v000001e93ca611a0_0, v000001e93ca61e20_0, v000001e93ca61ce0_0, v000001e93ca61ec0_0, v000001e93ca61880_0, v000001e93ca61d80_0, v000001e93ca61100_0 {0 0 0};
     %end;
-S_00000291ae78b2b0 .scope module, "u_ponto_fixo" "aritmetica_ponto_fixo" 3 14, 4 1 0, S_00000291ae79f950;
+S_000001e93c9fb2b0 .scope module, "u_ponto_fixo" "aritmetica_ponto_fixo" 3 14, 4 1 0, S_000001e93ca0f950;
  .timescale -9 -12;
     .port_info 0 /INPUT 2 "operacao";
     .port_info 1 /INPUT 8 "operando_a";
     .port_info 2 /INPUT 8 "operando_b";
     .port_info 3 /OUTPUT 8 "resultado";
     .port_info 4 /OUTPUT 1 "saturou";
-P_00000291ae78b440 .param/l "BITS_FRACIONARIOS" 0 4 3, +C4<00000000000000000000000000000101>;
-P_00000291ae78b478 .param/l "BITS_INTEIROS" 0 4 2, +C4<00000000000000000000000000000011>;
-P_00000291ae78b4b0 .param/l "LARGURA_TOTAL" 1 4 12, +C4<000000000000000000000000000001000>;
-P_00000291ae78b4e8 .param/l "OPERACAO_MULTIPLICACAO" 1 4 15, C4<10>;
-P_00000291ae78b520 .param/l "OPERACAO_SOMA" 1 4 13, C4<00>;
-P_00000291ae78b558 .param/l "OPERACAO_SUBTRACAO" 1 4 14, C4<01>;
-P_00000291ae78b590 .param/l "VALOR_MAXIMO" 1 4 17, +C4<01111111>;
-P_00000291ae78b5c8 .param/l "VALOR_MINIMO" 1 4 18, +C4<10000000>;
-v00000291ae784a60_0 .var "estouro_multiplicacao", 0 0;
-v00000291ae752d20_0 .var "estouro_soma_subtracao", 0 0;
-v00000291ae752dc0_0 .net "operacao", 1 0, v00000291ae7f1e20_0;  1 drivers
-v00000291ae752e60_0 .net/s "operando_a", 7 0, v00000291ae7f1a60_0;  1 drivers
-v00000291ae752f00_0 .var "operando_a_estendido", 8 0;
-v00000291ae752fa0_0 .net/s "operando_b", 7 0, v00000291ae7f1880_0;  1 drivers
-v00000291ae7f16a0_0 .var "operando_b_ajustado", 8 0;
-v00000291ae7f1420_0 .var "operando_b_estendido", 8 0;
-v00000291ae7f19c0_0 .var/s "produto_bruto", 15 0;
-v00000291ae7f1ba0_0 .var/s "produto_deslocado", 15 0;
-v00000291ae7f1c40_0 .var/s "resultado", 7 0;
-v00000291ae7f17e0_0 .var "saturou", 0 0;
-v00000291ae7f1ec0_0 .var "soma_estendida", 8 0;
-E_00000291ae79e240/0 .event anyedge, v00000291ae752e60_0, v00000291ae752fa0_0, v00000291ae752dc0_0, v00000291ae7f1420_0;
-E_00000291ae79e240/1 .event anyedge, v00000291ae752f00_0, v00000291ae7f16a0_0, v00000291ae7f1ec0_0, v00000291ae7f19c0_0;
-E_00000291ae79e240/2 .event anyedge, v00000291ae7f1ba0_0, v00000291ae752d20_0, v00000291ae784a60_0;
-E_00000291ae79e240 .event/or E_00000291ae79e240/0, E_00000291ae79e240/1, E_00000291ae79e240/2;
-    .scope S_00000291ae78b2b0;
+P_000001e93c9fb440 .param/l "BITS_FRACIONARIOS" 0 4 3, +C4<00000000000000000000000000000101>;
+P_000001e93c9fb478 .param/l "BITS_INTEIROS" 0 4 2, +C4<00000000000000000000000000000011>;
+P_000001e93c9fb4b0 .param/l "LARGURA_TOTAL" 1 4 12, +C4<000000000000000000000000000001000>;
+P_000001e93c9fb4e8 .param/l "OPERACAO_MULTIPLICACAO" 1 4 15, C4<10>;
+P_000001e93c9fb520 .param/l "OPERACAO_SOMA" 1 4 13, C4<00>;
+P_000001e93c9fb558 .param/l "OPERACAO_SUBTRACAO" 1 4 14, C4<01>;
+P_000001e93c9fb590 .param/l "VALOR_MAXIMO" 1 4 17, +C4<01111111>;
+P_000001e93c9fb5c8 .param/l "VALOR_MINIMO" 1 4 18, +C4<10000000>;
+v000001e93c9f4a60_0 .var "estouro_multiplicacao", 0 0;
+v000001e93c9c2d20_0 .var "estouro_soma_subtracao", 0 0;
+v000001e93c9c2dc0_0 .net "operacao", 1 0, v000001e93ca61ec0_0;  1 drivers
+v000001e93c9c2e60_0 .net/s "operando_a", 7 0, v000001e93ca61600_0;  1 drivers
+v000001e93c9c2f00_0 .var "operando_a_estendido", 8 0;
+v000001e93c9c2fa0_0 .net/s "operando_b", 7 0, v000001e93ca61e20_0;  1 drivers
+v000001e93ca61560_0 .var "operando_b_ajustado", 8 0;
+v000001e93ca614c0_0 .var "operando_b_estendido", 8 0;
+v000001e93ca612e0_0 .var/s "produto_bruto", 15 0;
+v000001e93ca619c0_0 .var/s "produto_deslocado", 15 0;
+v000001e93ca61740_0 .var/s "resultado", 7 0;
+v000001e93ca61a60_0 .var "saturou", 0 0;
+v000001e93ca61b00_0 .var "soma_estendida", 8 0;
+E_000001e93ca0e180/0 .event anyedge, v000001e93c9c2e60_0, v000001e93c9c2fa0_0, v000001e93c9c2dc0_0, v000001e93ca614c0_0;
+E_000001e93ca0e180/1 .event anyedge, v000001e93c9c2f00_0, v000001e93ca61560_0, v000001e93ca61b00_0, v000001e93ca612e0_0;
+E_000001e93ca0e180/2 .event anyedge, v000001e93ca619c0_0, v000001e93c9c2d20_0, v000001e93c9f4a60_0;
+E_000001e93ca0e180 .event/or E_000001e93ca0e180/0, E_000001e93ca0e180/1, E_000001e93ca0e180/2;
+    .scope S_000001e93c9fb2b0;
 T_1 ;
-    %wait E_00000291ae79e240;
-    %load/vec4 v00000291ae752e60_0;
+    %wait E_000001e93ca0e180;
+    %load/vec4 v000001e93c9c2e60_0;
     %parti/s 1, 7, 4;
-    %load/vec4 v00000291ae752e60_0;
+    %load/vec4 v000001e93c9c2e60_0;
     %concat/vec4; draw_concat_vec4
-    %store/vec4 v00000291ae752f00_0, 0, 9;
-    %load/vec4 v00000291ae752fa0_0;
+    %store/vec4 v000001e93c9c2f00_0, 0, 9;
+    %load/vec4 v000001e93c9c2fa0_0;
     %parti/s 1, 7, 4;
-    %load/vec4 v00000291ae752fa0_0;
+    %load/vec4 v000001e93c9c2fa0_0;
     %concat/vec4; draw_concat_vec4
-    %store/vec4 v00000291ae7f1420_0, 0, 9;
-    %load/vec4 v00000291ae752dc0_0;
+    %store/vec4 v000001e93ca614c0_0, 0, 9;
+    %load/vec4 v000001e93c9c2dc0_0;
     %cmpi/e 1, 0, 2;
     %jmp/0xz  T_1.0, 4;
-    %load/vec4 v00000291ae7f1420_0;
+    %load/vec4 v000001e93ca614c0_0;
     %inv;
     %addi 1, 0, 9;
-    %store/vec4 v00000291ae7f16a0_0, 0, 9;
+    %store/vec4 v000001e93ca61560_0, 0, 9;
     %jmp T_1.1;
 T_1.0 ;
-    %load/vec4 v00000291ae7f1420_0;
-    %store/vec4 v00000291ae7f16a0_0, 0, 9;
+    %load/vec4 v000001e93ca614c0_0;
+    %store/vec4 v000001e93ca61560_0, 0, 9;
 T_1.1 ;
-    %load/vec4 v00000291ae752f00_0;
-    %load/vec4 v00000291ae7f16a0_0;
+    %load/vec4 v000001e93c9c2f00_0;
+    %load/vec4 v000001e93ca61560_0;
     %add;
-    %store/vec4 v00000291ae7f1ec0_0, 0, 9;
-    %load/vec4 v00000291ae7f1ec0_0;
+    %store/vec4 v000001e93ca61b00_0, 0, 9;
+    %load/vec4 v000001e93ca61b00_0;
     %parti/s 1, 8, 5;
-    %load/vec4 v00000291ae7f1ec0_0;
+    %load/vec4 v000001e93ca61b00_0;
     %parti/s 1, 7, 4;
     %cmp/ne;
     %flag_get/vec4 4;
-    %store/vec4 v00000291ae752d20_0, 0, 1;
-    %load/vec4 v00000291ae752e60_0;
+    %store/vec4 v000001e93c9c2d20_0, 0, 1;
+    %load/vec4 v000001e93c9c2e60_0;
     %pad/s 16;
-    %load/vec4 v00000291ae752fa0_0;
+    %load/vec4 v000001e93c9c2fa0_0;
     %pad/s 16;
     %mul;
-    %store/vec4 v00000291ae7f19c0_0, 0, 16;
-    %load/vec4 v00000291ae7f19c0_0;
+    %store/vec4 v000001e93ca612e0_0, 0, 16;
+    %load/vec4 v000001e93ca612e0_0;
     %ix/load 4, 5, 0;
     %flag_set/imm 4, 0;
     %shiftr/s 4;
-    %store/vec4 v00000291ae7f1ba0_0, 0, 16;
-    %load/vec4 v00000291ae7f1ba0_0;
+    %store/vec4 v000001e93ca619c0_0, 0, 16;
+    %load/vec4 v000001e93ca619c0_0;
     %parti/s 9, 7, 4;
-    %load/vec4 v00000291ae7f1ba0_0;
+    %load/vec4 v000001e93ca619c0_0;
     %parti/s 1, 7, 4;
     %replicate 9;
     %cmp/ne;
     %flag_get/vec4 4;
-    %store/vec4 v00000291ae784a60_0, 0, 1;
+    %store/vec4 v000001e93c9f4a60_0, 0, 1;
     %pushi/vec4 0, 0, 8;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
-    %load/vec4 v00000291ae752dc0_0;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
+    %load/vec4 v000001e93c9c2dc0_0;
     %dup/vec4;
     %pushi/vec4 0, 0, 2;
     %cmp/u;
@@ -149,15 +149,15 @@ T_1.1 ;
     %cmp/u;
     %jmp/1 T_1.4, 6;
     %pushi/vec4 0, 0, 8;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
     %jmp T_1.6;
 T_1.2 ;
-    %load/vec4 v00000291ae752d20_0;
+    %load/vec4 v000001e93c9c2d20_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_1.7, 8;
-    %load/vec4 v00000291ae7f1ec0_0;
+    %load/vec4 v000001e93ca61b00_0;
     %parti/s 1, 8, 5;
     %flag_set/vec4 8;
     %jmp/0 T_1.9, 8;
@@ -169,23 +169,23 @@ T_1.9 ; End of true expr.
  ; End of false expr.
     %blend;
 T_1.10;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
     %jmp T_1.8;
 T_1.7 ;
-    %load/vec4 v00000291ae7f1ec0_0;
+    %load/vec4 v000001e93ca61b00_0;
     %parti/s 8, 0, 2;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
 T_1.8 ;
     %jmp T_1.6;
 T_1.3 ;
-    %load/vec4 v00000291ae752d20_0;
+    %load/vec4 v000001e93c9c2d20_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_1.11, 8;
-    %load/vec4 v00000291ae7f1ec0_0;
+    %load/vec4 v000001e93ca61b00_0;
     %parti/s 1, 8, 5;
     %flag_set/vec4 8;
     %jmp/0 T_1.13, 8;
@@ -197,23 +197,23 @@ T_1.13 ; End of true expr.
  ; End of false expr.
     %blend;
 T_1.14;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
     %jmp T_1.12;
 T_1.11 ;
-    %load/vec4 v00000291ae7f1ec0_0;
+    %load/vec4 v000001e93ca61b00_0;
     %parti/s 8, 0, 2;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
 T_1.12 ;
     %jmp T_1.6;
 T_1.4 ;
-    %load/vec4 v00000291ae784a60_0;
+    %load/vec4 v000001e93c9f4a60_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_1.15, 8;
-    %load/vec4 v00000291ae7f19c0_0;
+    %load/vec4 v000001e93ca612e0_0;
     %parti/s 1, 15, 5;
     %flag_set/vec4 8;
     %jmp/0 T_1.17, 8;
@@ -225,31 +225,31 @@ T_1.17 ; End of true expr.
  ; End of false expr.
     %blend;
 T_1.18;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
     %jmp T_1.16;
 T_1.15 ;
-    %load/vec4 v00000291ae7f1ba0_0;
+    %load/vec4 v000001e93ca619c0_0;
     %parti/s 8, 0, 2;
-    %store/vec4 v00000291ae7f1c40_0, 0, 8;
+    %store/vec4 v000001e93ca61740_0, 0, 8;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v00000291ae7f17e0_0, 0, 1;
+    %store/vec4 v000001e93ca61a60_0, 0, 1;
 T_1.16 ;
     %jmp T_1.6;
 T_1.6 ;
     %pop/vec4 1;
     %jmp T_1;
     .thread T_1, $push;
-    .scope S_00000291ae79f950;
+    .scope S_000001e93ca0f950;
 T_2 ;
     %vpi_call/w 3 38 "$display", "=== Iniciando testes da aritmetica_ponto_fixo (formato Q3.5) ===" {0 0 0};
     %pushi/vec4 0, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 48, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 32, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -299,15 +299,15 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 825110569, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %pushi/vec4 0, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 112, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 32, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -357,15 +357,15 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 825110569, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %pushi/vec4 1, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 64, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 112, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -415,15 +415,15 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 858666281, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %pushi/vec4 1, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 160, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 64, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -473,15 +473,15 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 841887785, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %pushi/vec4 2, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 48, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 64, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -531,15 +531,15 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 841887785, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %pushi/vec4 2, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 33, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 33, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -589,15 +589,15 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 825373993, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %pushi/vec4 2, 0, 2;
-    %store/vec4 v00000291ae7f1e20_0, 0, 2;
+    %store/vec4 v000001e93ca61ec0_0, 0, 2;
     %pushi/vec4 112, 0, 8;
-    %store/vec4 v00000291ae7f1a60_0, 0, 8;
+    %store/vec4 v000001e93ca61600_0, 0, 8;
     %pushi/vec4 112, 0, 8;
-    %store/vec4 v00000291ae7f1880_0, 0, 8;
+    %store/vec4 v000001e93ca61e20_0, 0, 8;
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %pushi/vec4 0, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
@@ -647,8 +647,8 @@ T_2 ;
     %concat/vec4; draw_string_vec4
     %pushi/vec4 858666281, 0, 32; draw_string_vec4
     %concat/vec4; draw_string_vec4
-    %store/vec4 v00000291ae78b210_0, 0, 800;
-    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_00000291ae79fae0;
+    %store/vec4 v000001e93c9fb210_0, 0, 800;
+    %fork TD_aritmetica_ponto_fixo_tb.executar_caso, S_000001e93ca0fae0;
     %join;
     %vpi_call/w 3 61 "$display", "=== Testes concluidos ===" {0 0 0};
     %vpi_call/w 3 62 "$finish" {0 0 0};
